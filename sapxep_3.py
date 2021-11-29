@@ -13,7 +13,6 @@ while True:
 print("Ban đầu:")
 print(num)
 
-
 #Sắp xếp
 for i in range (0, len(num)-1):
     for j in range (i+1, len(num)):

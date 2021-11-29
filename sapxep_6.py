@@ -22,18 +22,6 @@ def giamdan(x):
                 x[i], x[j] = x[j], x[i]
     return x
 
-def choicex(x):
-    choicex = int(input("Nhập 1 để sắp xếp tăng dần, 2 để sắp xếp giảm dần: "))
-    while(choicex != 1 and choicex != 2):
-        choicex = int(input("Nhập 1 để sắp xếp tăng dần, 2 để sắp xếp giảm dần: "))
-
-    if (choicex == 1):
-        print("Dữ liệu của mảng sau khi sắp xếp tăng dần:")
-        print(tangdan(x))
-    else:
-        print("Dữ liệu của mảng sau khi sắp xếp giảm dần:")
-        print(giamdan(x))
-
 def main():
     lim = int(input("Nhập số phần tử cần tạo: "))
     b = int(input("Nhập giới hạn giá trị của phần tử: "))
@@ -41,6 +29,12 @@ def main():
 
     print("Ban đầu:")
     print(num)
+
+    print("Dữ liệu của mảng sau khi sắp xếp tăng dần:")
+    print(tangdan(num))
+
+    print("Dữ liệu của mảng sau khi sắp xếp giảm dần:")
+    print(giamdan(num))
 
     choicex(num)
 if __name__== "__main__":
