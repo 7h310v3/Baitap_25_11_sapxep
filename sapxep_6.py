@@ -9,14 +9,14 @@ def taodulieu(lim, b):
     return tao
 
 def tangdan(x):
-    for i in range (0, len(x)-1):
+    for i in range (0, len(x)):
         for j in range (i+1, len(x)):
             if x[i] > x[j]:
                 x[i], x[j] = x[j], x[i]
     return x
 
 def giamdan(x):
-    for i in range (0, len(x)-1):
+    for i in range (0, len(x)):
         for j in range (i+1, len(x)):
             if x[i] < x[j]:
                 x[i], x[j] = x[j], x[i]
@@ -35,7 +35,5 @@ def main():
 
     print("Dữ liệu của mảng sau khi sắp xếp giảm dần:")
     print(giamdan(num))
-
-    choicex(num)
 if __name__== "__main__":
     main()
